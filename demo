@@ -1,8 +1,21 @@
+import java.util.Scanner;
 class Demo{
 Public static void main(String[] args){
-int a = 23;
-int b = 54;
-int c = a + b;
-System.out.println(c);
+Scanner sc = new Scanner();
+System.out.print(Please enter the Number : );
+int a = sc.nextInt();
+int b = 2;
+while(b<a){
+if(a%b==0){
+break;
+b++;
+}
+if(a==b){
+  System.out.print(The Entered number is Prime!);
+}
+else{
+   System.out.print(The Entered number is not Prime!);
+}
+}
 }
 }
